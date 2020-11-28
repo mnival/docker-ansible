@@ -1,7 +1,7 @@
 Docker docker-mediawiki
 ============
 
-Configuration Docker with python:slim with package pip ansible
+Configuration Docker with python:slim with pip package ansible and Debian package openssh-client
 
 Quick Start
 ===========
