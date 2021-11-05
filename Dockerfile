@@ -1,5 +1,4 @@
-#FROM python:latest
-FROM python:slim
+FROM python:3.10.0-slim
 
 RUN apt update && \
 	apt full-upgrade -y && \
