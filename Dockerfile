@@ -7,11 +7,10 @@ RUN apt update && \
 
 FROM base as builder
 
-RUN python -m venv /opt/venv
-
 ENV PATH="/opt/venv/bin:${PATH}"
 
-RUN pip install --no-cache-dir pip --upgrade && \
+RUN python -m venv /opt/venv && \
+  pip install --no-cache-dir pip --upgrade && \
   pip install --no-cache-dir ansible
 
 FROM base
