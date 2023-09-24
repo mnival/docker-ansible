@@ -1,4 +1,4 @@
-FROM python:3.11.3-slim as base
+FROM python:3.11.5-slim as base
 
 RUN apt update && \
 	apt full-upgrade -y && \
